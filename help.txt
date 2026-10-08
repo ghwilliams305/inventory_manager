@@ -1,0 +1,19 @@
+Commands:
+  insert <name> <quantity> <unit> <building> <room> <placement>  Add a new item to the system.
+  view [search_term]                                             View items, optionally filtered by a search term.
+  clear                                                          Clear the current screen.
+  help                                                           Show this help menu.
+  exit, quit                                                     Exit the application.
+
+  select <target> [options]                                      Select an item and modify its properties.
+  filter <target | clear> [options]                              Add, delete, and modify filters
+
+Select Options:
+  -d                                                             Delete the selected target.
+  -e <property> <value>                                          Edit a specific property with a new value.
+  -iu <number>                                                   Increment the target's value up by a number.
+  -id <number>                                                   Increment the target's value down by a number.
+
+Filter Options:
+  -d                                                             Delete the selected target filter.
+  -a <value> [filter type]                                       Create filter to value with the filter type of >, <, or =
